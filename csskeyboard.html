@@ -1,0 +1,195 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        
+            .board{
+                width: 1000px;
+                height: 450px;
+                background-color:gray;
+                border-radius: 20px;
+                background-image: linear-gradient(rgb(34, 31, 31),rgb(78, 78, 82),rgb(147, 143, 143),darkgrey);
+            }
+            .keyboard{
+                width: 970px;
+                height: 350px;
+                background-color:rgb(37, 35, 35);
+                border-radius: 20px;
+                position: absolute;
+                top: 90px;
+                left: 25px;
+                background-image: linear-gradient(rgb(149, 135, 135),rgb(62, 56, 56),rgb(82, 79, 79)) ;
+            }
+            .keys{
+                position: absolute;
+                top: 7px;
+                left: 7px;
+            }
+        .board .keyboard .keys input{
+            width: 60px;
+            border: solid black 2px;
+        }
+        .board .keyboard .row2 input{
+            width: 60px;
+            height: 60px;
+            border: solid black 2px;
+        
+        }
+        .row2{
+            position: absolute;
+            top: 30px;
+            left: 7px
+        }
+        .board .keyboard .row3 input{
+            width: 60px;
+            height: 60px;
+            border: solid black 2px;
+        
+        }
+        .row3{
+            position: absolute;
+            top: 92px;
+            left: 7px;
+        }
+    .board .keyboard .row4 input{  
+            width: 60px;
+            height: 60px;
+            border: solid black 2px;
+        
+        }
+        .row4{
+            position: absolute;
+                top: 154px;
+                left: 7px;
+        }
+        .board .keyboard .row5 input{  
+            width: 60px;
+            height: 60px;
+            border: solid black 2px;
+        
+        }
+    .row5{
+            position: absolute;
+                top: 216px;
+                left: 7px;
+        }
+    .board .keyboard .last input{  
+            width: 60px;
+            height: 60px;
+            border: solid black 2px;
+        
+        }
+        .last{
+            position: absolute;
+                top: 278px;
+                left: 7px;
+        }
+        </style>
+    </head>
+    <body>
+        
+    <div class="board">
+    <div class="keyboard">
+    <div class="keys">
+    <input type="button" name="btn" id="btn" value="Esc" style="border-top-left-radius: 10px; width: 55px;">
+    <input type="button" name="btn" id="btn" value="F1">
+    <input type="button" name="btn" id="btn" value="F2">
+    <input type="button" name="btn" id="btn" value="F3">
+    <input type="button" name="btn" id="btn" value="F4">
+    <input type="button" name="btn" id="btn" value="F5">
+    <input type="button" name="btn" id="btn" value="F6">
+    <input type="button" name="btn" id="btn" value="F7">
+    <input type="button" name="btn" id="btn" value="F8">
+    <input type="button" name="btn" id="btn" value="F9">
+    <input type="button" name="btn" id="btn" value="F10">
+    <input type="button" name="btn" id="btn" value="F11">
+    <input type="button" name="btn" id="btn" value="F12">
+    <input type="button" name="btn" id="btn" value="insert">
+    <input type="button" name="btn" id="btn" value="delete" style="border-top-right-radius: 10px;">
+    </div>
+    <div class="row2">
+    <input type="button" name="btn" id="btn" value="~`">
+    <input type="button" name="btn" id="btn" value="1">
+    <input type="button" name="btn" id="btn" value="2">
+    <input type="button" name="btn" id="btn" value="3">
+    <input type="button" name="btn" id="btn" value="4">
+    <input type="button" name="btn" id="btn" value="5">
+    <input type="button" name="btn" id="btn" value="6">
+    <input type="button" name="btn" id="btn" value="7">
+    <input type="button" name="btn" id="btn" value="8">
+    <input type="button" name="btn" id="btn" value="9">
+    <input type="button" name="btn" id="btn" value="0">
+    <input type="button" name="btn" id="btn" value="-">
+    <input type="button" name="btn" id="btn" value="+">
+    <input type="button" name="btn" id="btn" value="Backspace" style="width: 120px;">
+    </div>
+    <div class="row3">
+    <input type="button" name="btn" id="btn" value="Tab" style="width: 100px;">
+    <input type="button" name="btn" id="btn" value="Q">
+    <input type="button" name="btn" id="btn" value="W">
+    <input type="button" name="btn" id="btn" value="E">
+    <input type="button" name="btn" id="btn" value="R">
+    <input type="button" name="btn" id="btn" value="T">
+    <input type="button" name="btn" id="btn" value="Y">
+    <input type="button" name="btn" id="btn" value="U">
+    <input type="button" name="btn" id="btn" value="I">
+    <input type="button" name="btn" id="btn" value="O">
+    <input type="button" name="btn" id="btn" value="P">
+    <input type="button" name="btn" id="btn" value="[">
+    <input type="button" name="btn" id="btn" value="]">
+    <input type="button" name="btn" id="btn" value="\" style="width: 80px;">   
+    </div>
+
+    <div class="row4">
+    <input type="button" name="btn" id="btn" value="Caps Lock" style="width: 120px;">
+    <input type="button" name="btn" id="btn" value="A">
+    <input type="button" name="btn" id="btn" value="S">
+    <input type="button" name="btn" id="btn" value="D">
+    <input type="button" name="btn" id="btn" value="F">
+    <input type="button" name="btn" id="btn" value="G">
+    <input type="button" name="btn" id="btn" value="H">
+    <input type="button" name="btn" id="btn" value="I">
+    <input type="button" name="btn" id="btn" value="K">
+    <input type="button" name="btn" id="btn" value="L">
+    <input type="button" name="btn" id="btn" value=";">
+    <input type="button" name="btn" id="btn" value="'">
+    <input type="button" name="btn" id="btn" value="Enter" style="width: 125px;">
+    </div>
+    <div class="row5">
+    <input type="button" name="btn" id="btn" value="Shift" style="width: 150px;">
+    <input type="button" name="btn" id="btn" value="Z">
+    <input type="button" name="btn" id="btn" value="X">
+    <input type="button" name="btn" id="btn" value="C">
+    <input type="button" name="btn" id="btn" value="V">
+    <input type="button" name="btn" id="btn" value="B">
+    <input type="button" name="btn" id="btn" value="N">
+    <input type="button" name="btn" id="btn" value="M">
+    <input type="button" name="btn" id="btn" value=",">
+    <input type="button" name="btn" id="btn" value=".">
+    <input type="button" name="btn" id="btn" value="/">
+    <input type="button" name="btn" id="btn" value="Shift" style="width: 160px;">
+
+    </div>
+    <div class="last">
+    <input type="button" name="btn" id="btn" value="Ctrl" style="width: 78px; border-bottom-left-radius: 10px;">
+    <input type="button" name="btn" id="btn" value="FN">
+    <input type="button" name="btn" id="btn" value="window">
+    <input type="button" name="btn" id="btn" value="Alt">
+    <input type="button" name="btn" id="btn" style="width: 330px;">
+    <input type="button" name="btn" id="btn" value="alt">
+    <input type="button" name="btn" id="btn" value="Ctrl" style="width: 80px;">
+    <input type="button" name="btn" id="btn" value="Home">
+    <input type="button" name="btn" id="btn" value="Page" style="width: 70px;">
+    <input type="button" name="btn" id="btn" value="End" style="border-bottom-right-radius: 10px;">
+
+    </div>
+
+    </div>
+    </div>
+
+
+    </body>
+    </html>
