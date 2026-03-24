@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes using dom</title>
+
+<style>
+
+    body{
+        background-color: rgb(55, 101, 101);
+    }
+
+    #div1{
+        background-color: white;
+        font-size: large;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+        border:ridge 7px #c5e4db;
+    }
+    #maindiv{
+background-color: #c5e4db;
+height: 500px;
+margin: 30px;
+color: rgb(34, 60, 60);
+border: ridge 10px white;
+    }
+    
+
+
+    #para{
+        margin: 40px;
+        font-size: 24px;
+        color: rgb(3, 22, 22);
+        position: absolute;
+        top: 190px;
+        
+    }
+
+    #heading{
+        margin-top: 20px;
+        position: absolute;
+        top: 110px;
+       
+            }
+
+    input[type="button"]{
+        border: #c5e4db inset 4px;
+        height: 30px;
+        font-weight: bold;
+        margin: 10px;
+        border-radius: 4px;
+        font-size: large;
+    }
+
+    input[type="button"]:hover{
+
+        background-color: #c5e4db;
+        height: 35px;
+        border: white outset 4px;
+        font-size: larger;
+    }
+
+</style>
+
+
+</head>
+<body>
+
+    <div id="div1" align="center">let's learn about JAVASCRIPT </div>
+
+   <div id="maindiv">
+
+<h1  id="heading" ><u>BASICS OF JAVASCRIPT</u></h1>
+
+<h3  id="para"> click on the buttons to learn the topic you want 👇 </h3>
+
+
+   </div>
+<input type="button" value="introduction" onclick="intro()"></input>
+<input type="button" value="definition" onclick="define()"></input>
+<input type="button" value="characterstics of js" onclick="char()"></input>
+<input type="button" value="types of js" onclick="types()"></input>
+<input type="button" value="exeternal js" onclick="exe()"></input>
+<input type="button" value="internal js" onclick="inter()"></input>
+<input type="button" value="inline js" onclick="inline()"></input>
+ 
+    <script>
+
+
+function intro(){
+    var heading1;
+    var para1;
+    var main;
+    heading1=document.getElementById("heading");
+    para1=document.getElementById("para");
+    main=document.getElementById("maindiv")
+    heading1.textContent="INTRODUCTION OF JAVASCRIPT";
+    para1.innerHTML="Javascript is a scripting language. A scripting language is a type of programming language that is interpreted. Beacause these language do not require a slow compilation step, and testing ,making them the standard choice for automating tasks and creating interactive websites.JavaScript (JS) is a high-level, interpreted programming language that is a core technology of the World Wide Web, alongside HTML and CSS. It is primarily used to create dynamic and interactive features on websites, such as real-time content updates, interactive maps, and animated graphics.<br><br> 👨‍💻JavaScript was created by<br>👉 Brendan Eich in 1995 <br><br>🏢 Where was it invented?<br>👉Company: Netscape<br>👉It was developed for the Netscape Navigator browser";
+    main.style.backgroundColor="#b0ecdb";
+}
+
+function define(){
+    var heading2;
+    var para2;
+    var main2;
+    heading2=document.getElementById("heading");
+    para2=document.getElementById("para");
+    main2=document.getElementById("maindiv")
+    heading2.textContent="DEFINITION OF JAVASCRIPT";
+    para2.innerHTML="Javascript is a scripting ebsites interactive .It allows a website to move , react to click and update information without reloading the page . It is a multiparadigm programming language that confrms to the EcmaScript standard . It is the primary language for client side web behaviour and increasingly used on the server side Via runtimes like Node.js<br>JavaScript (JS) is a high-level, interpreted programming language that serves as one of the three core technologies of the World Wide Web, alongside HTML and CSS.<br><br><b>How It Works with HTML & CSS :<b><br><br>👉HTML: Provides the structure (e.g., paragraphs, buttons).<br>👉CSS: Handles the presentation (e.g., colors, fonts).<br>👉JavaScript: Adds interactivity (e.g., what happens when a button is clicked).";
+    main2.style.backgroundColor="#b0ecdb";
+}
+
+function char(){
+    var heading3;
+    var para3;
+    var main3;
+    heading3=document.getElementById("heading");
+    para3=document.getElementById("para");
+    main3=document.getElementById("maindiv")
+    heading3.textContent="CHARACTERSTICS OF JAVASCRIPT";
+    para3.innerHTML="<ul><li>Dynamic Typed</li> <li>Interpreted in IIT compiled</li> <li>Prototype-Based Oop</li> <li>Firs class function</li> <li>Event driven</li> <li>Client Side Execution</li> <li>Asynchronous</li> <li>Platform Idependant </li></ul>";
+    main3.style.backgroundColor="#b0ecdb";
+}
+function types(){
+    var heading4;
+    var para4;
+    var main4;
+    heading4=document.getElementById("heading");
+    para4=document.getElementById("para");
+    main4=document.getElementById("maindiv")
+    heading4.textContent="TYPES OF JAVASCRIPT";
+    para4.innerHTML="THERE ARE THREE TYPES OF JAVASCRIPT<br><ol> <li>Exeternal Javascript</li> <li>Internal Javascript</li>  <li>Inline Javascript</li></ol>";
+    main4.style.backgroundColor="#b0ecdb";
+}
+
+
+function exe(){
+    var heading5;
+    var para5;
+    var main5;
+    heading5=document.getElementById("heading");
+    para5=document.getElementById("para");
+    main5=document.getElementById("maindiv")
+    heading5.textContent="EXETERNAL JAVASCRIPT(The best way)";
+    para5.innerHTML=" This is the most common for professional websites . In this way you write your javascript code in a separate file (like : script.js) and link it to your HTML using the src attribute.<br> It keeps your code organized, makes it reusable across multiple pages,and helps your website load faster by allowing the browser to 'cache' (save) the file.<br><br>How to Use External JS👇<br><br>1. Create the JS file: Save your code in a file like script.js. Do not include 'script' tags inside this file.<br>2. Link it in HTML: Use the 'script' tag with the src attribute to point to your file's path.";
+    main5.style.backgroundColor="#b0ecdb";
+}
+
+
+function inter(){
+    var heading6;
+    var para6;
+    var main6;
+    heading6=document.getElementById("heading");
+    para6=document.getElementById("para");
+    main6=document.getElementById("maindiv")
+    heading6.textContent="INTERNAL/EMBEDDED JAVASCRIPT";
+     para6.innerHTML="In this way you write the code directly inside your HTML file . Using the 'script' tag. this is ussually placed in the 'head' or at the bottom of the 'body' <br> It is good for small scripts that only work on one specific page or for quick testing while you are learning.<br><br>How to Use Internal JS👇<br><br>1.Add 'script' Tag.<br>2. Write JavaScript Code inside it.";
+      main6.style.backgroundColor="#b0ecdb";
+}
+
+function inline(){
+    var heading7;
+    var para7;
+    var main7;
+    heading7=document.getElementById("heading");
+    para7=document.getElementById("para");
+    main7=document.getElementById("maindiv")
+    heading7.textContent="INLINE JAVASCRIPT";
+    para7.innerHTML="In this way you write short snippets of code directly inside an HTML tag using an HTML tag using 'event attribute' like onclick or onmouseover etc.<br>It is genetally not recomended beacause it makes your HTML messy and tough to manage . It is only used for very simple actions on a single element.<br><br>How to Use Inline JS👇<br><br>PSlace your code directly inside an HTML element’s event attribute (like onclick, onmouseover, or onchange).";
+    main7.style.backgroundColor="#b0ecdb";
+}
+
+
+
+
+    </script>
+</body>
+</html>
